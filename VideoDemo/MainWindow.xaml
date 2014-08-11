@@ -1,0 +1,111 @@
+﻿<Window x:Class="VideoDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="1920" Width="1080">
+	<Grid Name="rootContainer" Background="Pink">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="404" />
+				<ColumnDefinition Width="136" />
+				<ColumnDefinition Width="136" />
+				<ColumnDefinition Width="134" />
+				<ColumnDefinition Width="270" />
+			</Grid.ColumnDefinitions>
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="270" />
+				<RowDefinition Height="30" />
+				<RowDefinition Height="412" />
+				<RowDefinition Height="416"/>
+				<RowDefinition Height="526"/>
+				<RowDefinition Height="264"/>
+			</Grid.RowDefinitions>
+
+		<MediaElement x:Name="panel1" Margin="-1" 
+					Grid.Column="0" Grid.Row="0"
+					Grid.ColumnSpan="2" Grid.RowSpan="2" 
+					Source="media/1-ekg.mp4"
+					MediaOpened="panel1_MediaOpened"
+					MediaFailed="panel1_MediaFailed"
+					MediaEnded="panel1_MediaEnded"/>
+
+		<MediaElement x:Name="panel2" Margin="-1"
+					Grid.Column="2" Grid.Row="0" 
+					Grid.ColumnSpan="3" Grid.RowSpan="1"
+					Source="media/2-star.mp4"
+					MediaOpened="panel1_MediaOpened"
+					MediaFailed="panel1_MediaFailed"
+					MediaEnded="panel1_MediaEnded"/>
+
+		<MediaElement x:Name="panel3" Margin="-1"
+					Grid.Column="0" Grid.Row="2" 
+					Grid.ColumnSpan="2" Grid.RowSpan="1"
+					Source="media/3-verticalLines.mp4"
+					MediaOpened="panel1_MediaOpened"
+					MediaFailed="panel1_MediaFailed"
+					MediaEnded="panel1_MediaEnded"/>
+
+		<MediaElement x:Name="panel4"  Margin="-1"
+					Grid.Column="2" Grid.Row="1" 
+					Grid.ColumnSpan="2" Grid.RowSpan="2"
+					Source="media/4-horizLines.mp4"
+					MediaOpened="panel1_MediaOpened"
+					MediaFailed="panel1_MediaFailed"
+					MediaEnded="panel1_MediaEnded"/>
+
+		<MediaElement x:Name="panel5"  Margin="-1"
+					Grid.Column="4" Grid.Row="1" 
+					Grid.ColumnSpan="1" Grid.RowSpan="2"
+					Source="media/5-curvedLines.mp4"
+					MediaOpened="panel1_MediaOpened"
+					MediaFailed="panel1_MediaFailed"
+					MediaEnded="panel1_MediaEnded"/>
+
+		<MediaElement x:Name="panel6" Margin="-1"
+					Grid.Column="0" Grid.Row="3" 
+					Grid.ColumnSpan="1" Grid.RowSpan="1"
+					Source="media/6-glassCircles.mp4"
+					MediaOpened="panel1_MediaOpened"
+					MediaFailed="panel1_MediaFailed"
+					MediaEnded="panel1_MediaEnded"/>
+
+		<MediaElement x:Name="panel7" Margin="-1"
+					Grid.Column="1" Grid.Row="3" 
+					Grid.ColumnSpan="2" Grid.RowSpan="1" 
+					Source="media/7-diagZigZag.mp4"
+					MediaOpened="panel1_MediaOpened"
+					MediaFailed="panel1_MediaFailed"
+					MediaEnded="panel1_MediaEnded"/>
+
+		<MediaElement x:Name="panel8"  Margin="-1"
+					Grid.Column="3" Grid.Row="3" 
+					Grid.ColumnSpan="2" Grid.RowSpan="1"
+					Source="media/8-glassBurst.mp4"
+					MediaOpened="panel1_MediaOpened"
+					MediaFailed="panel1_MediaFailed"
+					MediaEnded="panel1_MediaEnded"/>
+
+		<MediaElement x:Name="panel9"  Margin="-1"
+					Grid.Column="0" Grid.Row="4" 
+					Grid.ColumnSpan="1" Grid.RowSpan="2"
+					Source="media/9-wavyLines.mp4"
+					MediaOpened="panel1_MediaOpened"
+					MediaFailed="panel1_MediaFailed"
+					MediaEnded="panel1_MediaEnded"/>
+
+		<MediaElement x:Name="panel10"  Margin="-1"
+					Grid.Column="1" Grid.Row="4" 
+					Grid.ColumnSpan="4" Grid.RowSpan="1"
+					Source="media/10-circle.mp4"
+					MediaOpened="panel1_MediaOpened"
+					MediaFailed="panel1_MediaFailed"
+					MediaEnded="panel1_MediaEnded"/>
+
+		<MediaElement x:Name="panel11"  Margin="-1"
+					Grid.Column="1" Grid.Row="5" 
+					Grid.ColumnSpan="4" Grid.RowSpan="1"
+					Source="media/11-wavyShape.mp4"
+					MediaOpened="panel1_MediaOpened"
+					MediaFailed="panel1_MediaFailed"
+					MediaEnded="panel1_MediaEnded"/>
+	</Grid>
+</Window>

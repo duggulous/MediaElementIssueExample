@@ -1,0 +1,86 @@
+#### `.gitignore`
+
+
+####
+# Flash Builder
+####
+bin-debug/
+bin-release/
+bin-release-temp/
+bin/
+html-template/
+*.actionScriptProperties
+*.flexProperties
+*.flexLibProperties
+*.FlexUnitSettings
+*.project
+*.settings
+*.metadata
+.metadata/
+ane-tmp/
+ane-bin/
+
+####
+# xcode
+####
+src/build/*
+src/docs/*
+src/docs
+*.mode1v3
+*.perspectivev3
+
+####
+# SVN directories
+####
+.svn
+
+####
+# osx
+####
+**/.DS_Store
+.DS_Store
+*.pbxuser
+profile
+
+
+####
+# IntelliJ
+####
+**/*.iml
+
+####
+# ant stuff
+####
+build.properties
+
+##### 
+## ci stuff
+#####
+build/
+reports/
+release/
+asdoc/
+
+#####
+## iOS build
+#####
+*.ipa
+
+
+####
+# FlashDevelop
+####
+*.as3proj
+
+
+#########
+# Visual Studio
+#########
+Debug/
+Release/
+*.suo
+*.opensdf
+ipch/
+*.sdf
+bin/
+
